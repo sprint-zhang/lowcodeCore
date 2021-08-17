@@ -1,0 +1,34 @@
+.temp {
+  position: relative;
+  box-sizing: border-box;
+  width: 210px;
+  height: 240px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border: 1px solid #f0f0f0;
+  cursor: pointer;
+  .btnGroup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: none;
+    transform: translate(-50%, -50%);
+  }
+
+  img {
+    width: 210px;
+  }
+
+  &:hover {
+    img {
+      transform: translateY(-30%);
+      opacity: 0.7;
+      transition: transform 1s;
+    }
+
+    .btnGroup {
+      display: block;
+    }
+  }
+}

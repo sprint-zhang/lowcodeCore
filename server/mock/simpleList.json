@@ -1,0 +1,8 @@
+{
+  "login": {
+    "list|10": [{
+      "name": "@name",
+      "age": "@integer(20)"
+    }]
+  }
+}

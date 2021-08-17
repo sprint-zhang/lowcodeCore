@@ -1,0 +1,12 @@
+{
+  "users|22": [
+    {
+      "name": "@name",
+      "address": "@county(true)",
+      "tags": ["nice", "developer"],
+      "age": "@integer(0, 50)",
+      "id": "@id",
+      "key|+1": 1
+    }
+  ]
+}

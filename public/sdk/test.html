@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+    <script src="lib/sdk.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            var component = new window.Component("http://localhost:8000");
+            component.create({
+                type: "Test",
+                category: "biz",
+                controls: { name: "tanyo" },
+                iframeStyle: {
+                    position:"center",
+                    width: 500,
+                    height: 500
+                }
+            });
+            component.addEventListener(function (data) {   
+
+                alert(data.val);
+                console.log(data);
+            });
+        }
+
+    </script>
+</head>
+<body>
+</body>
+</html>
